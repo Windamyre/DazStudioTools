@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>Daz Transition Dial Setting</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdpi.css">
+    <script src="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdtools.common.js"></script>
+    <script src="TransitionDialPI.js"></script>
+</head>
+<body>
+    <div class="sdpi-wrapper">
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Transition Effect:</div>
+            <select class="sdpi-item-value select sdProperty" id="transitionType" oninput="setSettings()">
+                <option value="0">Translate</option>
+                <option value="1">Rotate</option>
+                <option value="2">Scale</option>
+            </select>
+        </div>
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Transition Effect:</div>
+            <select class="sdpi-item-value select sdProperty" id="transitionAxis" oninput="setSettings()">
+                <option value="0">X-Axis</option>
+                <option value="1">Y-Axis</option>
+                <option value="2">Z-Axis</option>
+                <option value="3" disabled="disabled">All Axes</option>
+            </select>
+        </div>
+        <details class="message">
+            <summary>More Info &#9660;</summary>
+            For Daz Studio 4.15+<br />
+            Requires Daz Studio plugin by  <span class="linkspan" onclick="openEsemwy()">esewmy</span><br />
+            StreamDeck Plug-in by <span class="linkspan" onclick="openWindamyre()">Windamyre</span><br />
+
+        </details>
+    </div>
+
+</body>
+</html>

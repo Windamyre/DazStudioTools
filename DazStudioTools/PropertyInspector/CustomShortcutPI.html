@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>Custom Daz Studio Shortcut Settings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdpi.css">
+    <script src="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdtools.common.js"></script>
+    <script src="CustomShortcutJS.js"></script>
+</head>
+<body>
+    <div class="sdpi-wrapper">
+
+        <details class="message">
+            <summary>More Info &#9660;</summary>
+            For Daz Studio 4.15+<br />
+            Requires Daz Studio plugin by  <span class="linkspan" onclick="openEsemwy()">esewmy</span><br />
+            StreamDeck Plug-in by <span class="linkspan" onclick="openWindamyre()">Windamyre</span><br />
+
+        </details>
+
+        <div class="sdpi-wrapper" id="dvNotLoaded" style="display:none">
+            <details class="message info">
+                <summary>Unable to communicate with plug-in. </summary>
+            </details>
+        </div>
+
+        <div id="dvActionListing">
+            <div class="sdpi-item" id="dvAction">
+                <div class="sdpi-item-label">Action to trigger</div>
+                <select class="sdpi-item-value select sdProperty sdList" id="actionItemList" oninput="setSettings()" sdListTextProperty="text" sdListValueProperty="name" sdValueField="actionName"></select>
+            </div>
+        </div>
+        <div type="checkbox" class="sdpi-item" id="dvShowActionTitle">
+            <div class="sdpi-item-label">Show Title</div>
+            <div class="sdpi-item-value">
+                <input id="showActionTitle" type="checkbox" value="" class="sdProperty sdCheckbox" oninput="setSettings()">
+                <label for="showActionTitle" class="sdpi-item-label"><span></span>Only works if Title box is blank.</label>
+            </div>
+        </div>
+        <div type="checkbox" class="sdpi-item" id="dvShowActionIcon">
+            <div class="sdpi-item-label">Custom Icon</div>
+            <div class="sdpi-item-value">
+                <input id="showActionIcon" type="checkbox" value="" class="sdProperty sdCheckbox" oninput="setSettings()">
+                <label for="showActionIcon" class="sdpi-item-label"><span></span>Replace default icon.</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

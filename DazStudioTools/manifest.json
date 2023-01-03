@@ -1,0 +1,86 @@
+{
+  "Actions": [
+    {
+      "Icon": "Images/icon",
+      "Name": "Daz Studio Transition Dial",
+      "States": [
+        {
+          "Image": "Images/icon",
+          "TitleAlignment": "middle",
+          "FontSize": "10"
+        }
+      ],
+      "Controllers": [ "Encoder" ],
+      "Encoder": {
+        "background": "backgroundImage",
+        "Icon": "Images/dazStudioActions",
+        "layout": "$A1",
+        "StackColor": "#AABBCC",
+        "TriggerDescription": {
+          "Rotate": "Modify the selected value.",
+          "Push": "Hold and twist to adjsut sensitivity.",
+          "Touch": "None.  Not enabled.",
+          "LongTouch": "Reset value to Default."
+        }
+      },
+      "SupportedInMultiActions": false,
+      "Tooltip": "Adjust rotatin, scale, or translation.",
+      "UUID": "com.windamyre.dazstudiotools.daztransition",
+      "PropertyInspectorPath": "PropertyInspector/TransitionDialPI.html"
+    },
+
+    {
+      "Icon": "Images/dazStudioActions",
+      "Name": "Daz Studio Actions",
+      "States": [
+        {
+          "Image": "Images/dazStudioActions",
+          "TitleAlignment": "middle",
+          "FontSize": "10"
+        }
+      ],
+      "Controllers": "Keypad",
+      "SupportedInMultiActions": true,
+      "Tooltip": "Can activate any built-in or custom action.  Can take a little longer to load up the list.",
+      "UUID": "com.windamyre.dazstudiotools.dazstudioactions",
+      "PropertyInspectorPath": "PropertyInspector/CustomShortcutPI.html"
+    },
+
+    {
+      "Icon": "Images/dazCustomActions",
+      "Name": "Daz Custom Actions",
+      "States": [
+        {
+          "Image": "Images/dazCustomActions",
+          "TitleAlignment": "middle",
+          "FontSize": "10"
+        }
+      ],
+      "Controllers": "Keypad",
+      "SupportedInMultiActions": true,
+      "Tooltip": "Limited to custom actions.",
+      "UUID": "com.windamyre.dazstudiotools.dazcustomactions",
+      "PropertyInspectorPath": "PropertyInspector/CustomShortcutPI.html"
+    }
+  ],
+  "Author": "Windamyre",
+  "Description": "Streamdeck tools for Daz Studio.  Requires Daz Studio socket plugin",
+  "Name": "Daz Studio Tools",
+  "Icon": "Images/pluginIcon",
+  "URL": "https://github.com/Windamyre/",
+  "Version": "0.4",
+  "CodePath": "com.windamyre.dazstudiotools.exe",
+  "Category": "Daz Studio Tools",
+  "CategoryIcon": "Images/categoryIcon",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "5"
+  }
+}
+
