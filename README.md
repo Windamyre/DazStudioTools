@@ -1,5 +1,5 @@
 # Daz Studio Tools
-My StreamDeck plugins for integrating with Daz Studio. 
+My Stream Deck and Stream Deck Plus plugins for integrating with Daz Studio. 
 This requires you to run the Daz Studio plug-in by esemwy.  https://github.com/esemwy/StreamDeckSocket
 
 I'm a noob programmer.  If you have suggestions, please let me know by posting an issue on the github repo.
