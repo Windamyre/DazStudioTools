@@ -144,6 +144,30 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="Images\DialIcons\Rotate_---.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\DialIcons\Rotate_--Z.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\DialIcons\Rotate_-Y-.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\DialIcons\Rotate_-YZ.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\DialIcons\Rotate_X--.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\DialIcons\Rotate_X-Z.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\DialIcons\Rotate_XY-.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\DialIcons\Rotate_XYZ.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Images\pluginIcon%402x.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
